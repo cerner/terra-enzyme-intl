@@ -1,0 +1,70 @@
+{
+  "name": "terra-enzyme-intl",
+  "version": "0.0.0",
+  "description": "Enzyme helpers for fortifying tests that depend on react-intl by decoupling the need for actual translations.",
+  "main": "lib/index.js",
+  "engines": {
+    "node": ">=8.9.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cerner/terra-enzyme-intl.git"
+  },
+  "keywords": [
+    "Cerner",
+    "Terra",
+    "terra-enzyme-intl",
+    "jest",
+    "enzyme",
+    "react",
+    "react-intl",
+    "i18n",
+    "intl"
+  ],
+  "author": "Cerner Corporation",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/cerner/terra-enzyme-intl#readme",
+  "bugs": {
+    "url": "https://github.com/cerner/terra-enzyme-intl/issues"
+  },
+  "browserslist": [
+    "extends browserslist-config-terra"
+  ],
+  "eslintConfig": {
+    "extends": "terra"
+  },
+  "files": [
+    "lib"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "browserslist-config-terra": "^1.1.0",
+    "danger": "^3.7.14",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.10.0",
+    "enzyme-to-json": "^3.3.5",
+    "eslint": "^5.14.1",
+    "eslint-config-terra": "^2.4.0",
+    "jest": "^24.1.0",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-intl": "^2.8.0"
+  },
+  "peerDependencies": {
+    "enzyme": "3.x",
+    "react": "16.x",
+    "react-intl": ">= 2.7"
+  },
+  "scripts": {
+    "compile": "babel src --out-dir lib --copy-files",
+    "danger": "danger ci",
+    "jest": "jest --config jestConfig.js",
+    "lint": "eslint --ext .js,.jsx .",
+    "precompile": "rm -rf lib",
+    "prepublishOnly": "npm run compile",
+    "test": "npm run lint && npm run jest"
+  }
+}
