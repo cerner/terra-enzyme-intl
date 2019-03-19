@@ -37,10 +37,10 @@
     "lib"
   ],
   "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.3.4",
-    "@babel/preset-env": "^7.3.4",
-    "@babel/preset-react": "^7.0.0",
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "browserslist-config-terra": "^1.1.0",
     "danger": "^3.7.14",
     "enzyme": "^3.9.0",
@@ -48,7 +48,7 @@
     "enzyme-to-json": "^3.3.5",
     "eslint": "^5.14.1",
     "eslint-config-terra": "^2.4.0",
-    "jest": "^24.1.0",
+    "jest": "^23.1.0",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-intl": "^2.8.0"

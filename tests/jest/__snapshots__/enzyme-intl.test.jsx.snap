@@ -1,0 +1,510 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`mountContext with mount using FormattedMessage should match the snapshot 1`] = `
+<FormattedMessageSubject
+  foo="bar"
+>
+  <div>
+    <FormattedMessage
+      id="TerraEnzymeIntl.helloWorld"
+      values={Object {}}
+    >
+      <span>
+        TerraEnzymeIntl.helloWorld
+      </span>
+    </FormattedMessage>
+    <FormattedMessage
+      id="TerraEnzymeIntl.buttonText"
+      values={Object {}}
+    >
+      <button
+        type="button"
+      >
+        TerraEnzymeIntl.buttonText
+      </button>
+    </FormattedMessage>
+    {
+  "foo": "bar"
+}
+  </div>
+</FormattedMessageSubject>
+`;
+
+exports[`mountContext with mount using contextTypes should match the snapshot 1`] = `
+<ContextTypesSubject
+  foo="bar"
+>
+  <div>
+    TerraEnzymeIntl.helloWorld
+    <button
+      type="button"
+    >
+      TerraEnzymeIntl.buttonText
+    </button>
+    {
+  "foo": "bar"
+}
+  </div>
+</ContextTypesSubject>
+`;
+
+exports[`mountContext with mount using injectIntl should match the snapshot 1`] = `
+<InjectIntl(Component)
+  foo="bar"
+>
+  <Component
+    foo="bar"
+    intl={
+      Object {
+        "defaultFormats": Object {},
+        "defaultLocale": "en",
+        "formatDate": [Function],
+        "formatHTMLMessage": [Function],
+        "formatMessage": [Function],
+        "formatNumber": [Function],
+        "formatPlural": [Function],
+        "formatRelative": [Function],
+        "formatTime": [Function],
+        "formats": Object {},
+        "formatters": Object {
+          "getDateTimeFormat": [Function],
+          "getMessageFormat": [Function],
+          "getNumberFormat": [Function],
+          "getPluralFormat": [Function],
+          "getRelativeFormat": [Function],
+        },
+        "locale": "en",
+        "messages": null,
+        "now": [Function],
+        "onError": [Function],
+        "textComponent": "span",
+        "timeZone": null,
+      }
+    }
+  >
+    <div>
+      TerraEnzymeIntl.helloWorld
+      <button
+        type="button"
+      >
+        TerraEnzymeIntl.buttonText
+      </button>
+      {
+  "foo": "bar"
+}
+    </div>
+  </Component>
+</InjectIntl(Component)>
+`;
+
+exports[`mountWithIntl using FormattedMessage should match the snapshot 1`] = `
+<FormattedMessageSubject
+  foo="bar"
+  intl={
+    Object {
+      "defaultFormats": Object {},
+      "defaultLocale": "en",
+      "formatDate": [Function],
+      "formatHTMLMessage": [Function],
+      "formatMessage": [Function],
+      "formatNumber": [Function],
+      "formatPlural": [Function],
+      "formatRelative": [Function],
+      "formatTime": [Function],
+      "formats": Object {},
+      "formatters": Object {
+        "getDateTimeFormat": [Function],
+        "getMessageFormat": [Function],
+        "getNumberFormat": [Function],
+        "getPluralFormat": [Function],
+        "getRelativeFormat": [Function],
+      },
+      "locale": "en",
+      "messages": null,
+      "now": [Function],
+      "onError": [Function],
+      "textComponent": "span",
+      "timeZone": null,
+    }
+  }
+>
+  <div>
+    <FormattedMessage
+      id="TerraEnzymeIntl.helloWorld"
+      values={Object {}}
+    >
+      <span>
+        TerraEnzymeIntl.helloWorld
+      </span>
+    </FormattedMessage>
+    <FormattedMessage
+      id="TerraEnzymeIntl.buttonText"
+      values={Object {}}
+    >
+      <button
+        type="button"
+      >
+        TerraEnzymeIntl.buttonText
+      </button>
+    </FormattedMessage>
+    {
+  "foo": "bar",
+  "intl": {
+    "locale": "en",
+    "messages": {},
+    "formats": {},
+    "timeZone": null,
+    "textComponent": "span",
+    "defaultLocale": "en",
+    "defaultFormats": {},
+    "formatters": {}
+  }
+}
+  </div>
+</FormattedMessageSubject>
+`;
+
+exports[`mountWithIntl using contextTypes should match the snapshot 1`] = `
+<ContextTypesSubject
+  foo="bar"
+  intl={
+    Object {
+      "defaultFormats": Object {},
+      "defaultLocale": "en",
+      "formatDate": [Function],
+      "formatHTMLMessage": [Function],
+      "formatMessage": [Function],
+      "formatNumber": [Function],
+      "formatPlural": [Function],
+      "formatRelative": [Function],
+      "formatTime": [Function],
+      "formats": Object {},
+      "formatters": Object {
+        "getDateTimeFormat": [Function],
+        "getMessageFormat": [Function],
+        "getNumberFormat": [Function],
+        "getPluralFormat": [Function],
+        "getRelativeFormat": [Function],
+      },
+      "locale": "en",
+      "messages": null,
+      "now": [Function],
+      "onError": [Function],
+      "textComponent": "span",
+      "timeZone": null,
+    }
+  }
+>
+  <div>
+    TerraEnzymeIntl.helloWorld
+    <button
+      type="button"
+    >
+      TerraEnzymeIntl.buttonText
+    </button>
+    {
+  "foo": "bar",
+  "intl": {
+    "locale": "en",
+    "messages": {},
+    "formats": {},
+    "timeZone": null,
+    "textComponent": "span",
+    "defaultLocale": "en",
+    "defaultFormats": {},
+    "formatters": {}
+  }
+}
+  </div>
+</ContextTypesSubject>
+`;
+
+exports[`mountWithIntl using injectIntl should match the snapshot 1`] = `
+<InjectIntl(Component)
+  foo="bar"
+  intl={
+    Object {
+      "defaultFormats": Object {},
+      "defaultLocale": "en",
+      "formatDate": [Function],
+      "formatHTMLMessage": [Function],
+      "formatMessage": [Function],
+      "formatNumber": [Function],
+      "formatPlural": [Function],
+      "formatRelative": [Function],
+      "formatTime": [Function],
+      "formats": Object {},
+      "formatters": Object {
+        "getDateTimeFormat": [Function],
+        "getMessageFormat": [Function],
+        "getNumberFormat": [Function],
+        "getPluralFormat": [Function],
+        "getRelativeFormat": [Function],
+      },
+      "locale": "en",
+      "messages": null,
+      "now": [Function],
+      "onError": [Function],
+      "textComponent": "span",
+      "timeZone": null,
+    }
+  }
+>
+  <Component
+    foo="bar"
+    intl={
+      Object {
+        "defaultFormats": Object {},
+        "defaultLocale": "en",
+        "formatDate": [Function],
+        "formatHTMLMessage": [Function],
+        "formatMessage": [Function],
+        "formatNumber": [Function],
+        "formatPlural": [Function],
+        "formatRelative": [Function],
+        "formatTime": [Function],
+        "formats": Object {},
+        "formatters": Object {
+          "getDateTimeFormat": [Function],
+          "getMessageFormat": [Function],
+          "getNumberFormat": [Function],
+          "getPluralFormat": [Function],
+          "getRelativeFormat": [Function],
+        },
+        "locale": "en",
+        "messages": null,
+        "now": [Function],
+        "onError": [Function],
+        "textComponent": "span",
+        "timeZone": null,
+      }
+    }
+  >
+    <div>
+      TerraEnzymeIntl.helloWorld
+      <button
+        type="button"
+      >
+        TerraEnzymeIntl.buttonText
+      </button>
+      {
+  "foo": "bar"
+}
+    </div>
+  </Component>
+</InjectIntl(Component)>
+`;
+
+exports[`renderWithIntl using FormattedMessage should match the snapshot 1`] = `
+<div>
+  <span>
+    TerraEnzymeIntl.helloWorld
+  </span>
+  <button
+    type="button"
+  >
+    TerraEnzymeIntl.buttonText
+  </button>
+  {
+  "foo": "bar",
+  "intl": {
+    "locale": "en",
+    "messages": {},
+    "formats": {},
+    "timeZone": null,
+    "textComponent": "span",
+    "defaultLocale": "en",
+    "defaultFormats": {},
+    "formatters": {}
+  }
+}
+</div>
+`;
+
+exports[`renderWithIntl using contextTypes should match the snapshot 1`] = `
+<div>
+  TerraEnzymeIntl.helloWorld
+  <button
+    type="button"
+  >
+    TerraEnzymeIntl.buttonText
+  </button>
+  {
+  "foo": "bar",
+  "intl": {
+    "locale": "en",
+    "messages": {},
+    "formats": {},
+    "timeZone": null,
+    "textComponent": "span",
+    "defaultLocale": "en",
+    "defaultFormats": {},
+    "formatters": {}
+  }
+}
+</div>
+`;
+
+exports[`renderWithIntl using injectIntl should match the snapshot 1`] = `
+<div>
+  TerraEnzymeIntl.helloWorld
+  <button
+    type="button"
+  >
+    TerraEnzymeIntl.buttonText
+  </button>
+  {
+  "foo": "bar"
+}
+</div>
+`;
+
+exports[`shallowContext with shallow using FormattedMessage should match the snapshot 1`] = `
+<div>
+  <FormattedMessage
+    id="TerraEnzymeIntl.helloWorld"
+    values={Object {}}
+  />
+  <FormattedMessage
+    id="TerraEnzymeIntl.buttonText"
+    values={Object {}}
+  >
+    <Component />
+  </FormattedMessage>
+  {
+  "foo": "bar"
+}
+</div>
+`;
+
+exports[`shallowContext with shallow using contextTypes should match the snapshot 1`] = `
+<div>
+  TerraEnzymeIntl.helloWorld
+  <button
+    type="button"
+  >
+    TerraEnzymeIntl.buttonText
+  </button>
+  {
+  "foo": "bar"
+}
+</div>
+`;
+
+exports[`shallowContext with shallow using injectIntl should match the snapshot 1`] = `
+<Component
+  foo="bar"
+  intl={
+    Object {
+      "defaultFormats": Object {},
+      "defaultLocale": "en",
+      "formatDate": [Function],
+      "formatHTMLMessage": [Function],
+      "formatMessage": [Function],
+      "formatNumber": [Function],
+      "formatPlural": [Function],
+      "formatRelative": [Function],
+      "formatTime": [Function],
+      "formats": Object {},
+      "formatters": Object {
+        "getDateTimeFormat": [Function],
+        "getMessageFormat": [Function],
+        "getNumberFormat": [Function],
+        "getPluralFormat": [Function],
+        "getRelativeFormat": [Function],
+      },
+      "locale": "en",
+      "messages": null,
+      "now": [Function],
+      "onError": [Function],
+      "textComponent": "span",
+      "timeZone": null,
+    }
+  }
+/>
+`;
+
+exports[`shallowWithIntl using FormattedMessage should match the snapshot 1`] = `
+<div>
+  <FormattedMessage
+    id="TerraEnzymeIntl.helloWorld"
+    values={Object {}}
+  />
+  <FormattedMessage
+    id="TerraEnzymeIntl.buttonText"
+    values={Object {}}
+  >
+    <Component />
+  </FormattedMessage>
+  {
+  "foo": "bar",
+  "intl": {
+    "locale": "en",
+    "messages": {},
+    "formats": {},
+    "timeZone": null,
+    "textComponent": "span",
+    "defaultLocale": "en",
+    "defaultFormats": {},
+    "formatters": {}
+  }
+}
+</div>
+`;
+
+exports[`shallowWithIntl using contextTypes should match the snapshot 1`] = `
+<div>
+  TerraEnzymeIntl.helloWorld
+  <button
+    type="button"
+  >
+    TerraEnzymeIntl.buttonText
+  </button>
+  {
+  "foo": "bar",
+  "intl": {
+    "locale": "en",
+    "messages": {},
+    "formats": {},
+    "timeZone": null,
+    "textComponent": "span",
+    "defaultLocale": "en",
+    "defaultFormats": {},
+    "formatters": {}
+  }
+}
+</div>
+`;
+
+exports[`shallowWithIntl using injectIntl should match the snapshot 1`] = `
+<Component
+  foo="bar"
+  intl={
+    Object {
+      "defaultFormats": Object {},
+      "defaultLocale": "en",
+      "formatDate": [Function],
+      "formatHTMLMessage": [Function],
+      "formatMessage": [Function],
+      "formatNumber": [Function],
+      "formatPlural": [Function],
+      "formatRelative": [Function],
+      "formatTime": [Function],
+      "formats": Object {},
+      "formatters": Object {
+        "getDateTimeFormat": [Function],
+        "getMessageFormat": [Function],
+        "getNumberFormat": [Function],
+        "getPluralFormat": [Function],
+        "getRelativeFormat": [Function],
+      },
+      "locale": "en",
+      "messages": null,
+      "now": [Function],
+      "onError": [Function],
+      "textComponent": "span",
+      "timeZone": null,
+    }
+  }
+/>
+`;
