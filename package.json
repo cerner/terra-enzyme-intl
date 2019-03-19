@@ -51,7 +51,8 @@
     "jest": "^23.1.0",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
-    "react-intl": "^2.8.0"
+    "react-intl": "^2.8.0",
+    "shelljs": "^0.8.2"
   },
   "peerDependencies": {
     "enzyme": "3.x",
@@ -65,6 +66,9 @@
     "lint": "eslint --ext .js,.jsx .",
     "precompile": "rm -rf lib",
     "prepublishOnly": "npm run compile",
+    "release:major": "node scripts/release/release.js major",
+    "release:minor": "node scripts/release/release.js minor",
+    "release:patch": "node scripts/release/release.js patch",
     "test": "npm run lint && npm run jest"
   }
 }
