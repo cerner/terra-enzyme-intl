@@ -65,6 +65,7 @@
     "danger": "danger ci",
     "jest": "jest --config jestConfig.js",
     "lint": "eslint --ext .js,.jsx .",
+    "prepare": "npm run compile",
     "precompile": "rm -rf lib",
     "prepublishOnly": "npm run compile",
     "release:major": "node scripts/release/release.js major",
