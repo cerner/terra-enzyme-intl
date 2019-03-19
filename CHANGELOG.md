@@ -4,6 +4,11 @@ Changelog
 Unreleased
 ----------
 
+3.0.0 - (March 19, 2019)
+----------
+### Changed
+* Added command to generate lib directory during publish
+
 2.0.0 - (March 19, 2019)
 ----------
 ### Changed
