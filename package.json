@@ -50,8 +50,8 @@
     "eslint": "^5.14.1",
     "eslint-config-terra": "^2.4.0",
     "jest": "^23.1.0",
-    "react": "^16.8.3",
-    "react-dom": "^16.8.3",
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5",
     "react-intl": "^2.8.0",
     "shelljs": "^0.8.2"
   },
