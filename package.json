@@ -52,8 +52,7 @@
     "jest": "^23.1.0",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
-    "react-intl": "^2.8.0",
-    "shelljs": "^0.8.2"
+    "react-intl": "^2.8.0"
   },
   "peerDependencies": {
     "enzyme": "3.x",
@@ -61,16 +60,18 @@
     "react-intl": ">= 2.7"
   },
   "scripts": {
+    "clean": "rm -rf node_modules",
     "compile": "babel src --out-dir lib --copy-files",
     "danger": "danger ci",
     "jest": "jest --config jestConfig.js",
     "lint": "eslint --ext .js,.jsx .",
+    "postpublish": "git push --tag",
     "prepare": "npm run compile",
     "precompile": "rm -rf lib",
-    "prepublishOnly": "npm run compile",
-    "release:major": "node scripts/release/release.js major",
-    "release:minor": "node scripts/release/release.js minor",
-    "release:patch": "node scripts/release/release.js patch",
+    "prepublishOnly": "whoami && npm run compile",
+    "release:major": "npm version major -m 'Released version %s' && npm publish",
+    "release:minor": "npm version minor -m 'Released version %s' && npm publish",
+    "release:patch": "npm version patch -m 'Released version %s' && npm publish",
     "test": "npm run lint && npm run jest"
   }
 }
