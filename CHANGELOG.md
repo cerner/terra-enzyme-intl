@@ -3,6 +3,11 @@ Changelog
 
 Unreleased
 ----------
+### Changed
+* Updated babel and jest devDependencies to latest stable major versions
+
+### Removed
+* Removed danger devDependency and dangerfile.js
 
 3.0.0 - (March 19, 2019)
 ----------

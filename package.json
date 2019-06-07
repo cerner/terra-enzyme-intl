@@ -37,19 +37,18 @@
     "lib"
   ],
   "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-core": "^6.24.1",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
     "browserslist-config-terra": "^1.1.0",
-    "danger": "^3.7.14",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.10.0",
     "enzyme-to-json": "^3.3.5",
     "eslint": "^5.14.1",
     "eslint-config-terra": "^2.4.0",
-    "jest": "^23.1.0",
+    "jest": "^24.0.0",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
     "react-intl": "^2.8.0"
@@ -62,7 +61,6 @@
   "scripts": {
     "clean": "rm -rf node_modules",
     "compile": "babel src --out-dir lib --copy-files",
-    "danger": "danger ci",
     "jest": "jest --config jestConfig.js",
     "lint": "eslint --ext .js,.jsx .",
     "postpublish": "git push --tag",
