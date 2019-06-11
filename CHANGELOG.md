@@ -3,6 +3,9 @@ Changelog
 
 Unreleased
 ----------
+
+3.1.0 - (June 11, 2019)
+----------
 ### Changed
 * Updated babel and jest devDependencies to latest stable major versions
 
