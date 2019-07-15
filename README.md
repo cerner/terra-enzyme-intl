@@ -27,6 +27,15 @@ Install with [npmjs](https://www.npmjs.com):
 
 This package adds the following helpers for testing React components with [Jest](https://jestjs.io/) and [Enzyme](https://airbnb.io/enzyme/) that use the [react-intl](https://github.com/yahoo/react-intl) APIs. Your `mount()`ed and `shallow()`ed components need access to the intl context to render properly.
 
+In you Jest config, add the following config
+
+```
+ moduleNameMapper: {
+    intlLoaders: 'terra-enzyme-intl',
+    translationsLoaders: 'terra-enzyme-intl',
+ },
+```
+
 ### shallowWithIntl
 
 The `shallowWithIntl` method is a decorated version of [enzyme's shallow](https://airbnb.io/enzyme/docs/api/shallow.html#shallow-rendering-api) that injects a mock version of the [react-intl](https://github.com/yahoo/react-intl/wiki/API#intlshape) `intl` object into your component as well as set up the required `intl` context for either `<Formatted* />` components or `format*()` methods through `injectIntl()`.
