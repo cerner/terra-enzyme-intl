@@ -20,7 +20,7 @@ export const mockIntl = {
   now: () => 0,
 };
 
-const messageProxy = new Proxy({}, { get: (_, property) => property });
+const messageProxy = new Proxy({}, { get: (_, property) => property }); // eslint-disable-line compat/compat
 
 // Create the IntlProvider to retrieve context for wrapping around.
 const intlProvider = new IntlProvider({ locale: 'en', messages: messageProxy }, {});

@@ -31,7 +31,8 @@
     "extends browserslist-config-terra"
   ],
   "eslintConfig": {
-    "extends": "terra"
+    "extends": "terra",
+    "parser": "babel-eslint"
   },
   "files": [
     "lib"
@@ -42,12 +43,13 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
     "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.2",
     "browserslist-config-terra": "^1.1.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.10.0",
     "enzyme-to-json": "^3.3.5",
-    "eslint": "^5.14.1",
-    "eslint-config-terra": "^2.4.0",
+    "eslint": "^6.1.0",
+    "eslint-config-terra": "cerner/eslint-config-terra#update-dependencies",
     "jest": "^24.0.0",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
@@ -60,6 +62,7 @@
   },
   "scripts": {
     "clean": "rm -rf node_modules",
+    "clean:install": "npm run clean && npm install",
     "compile": "babel src --out-dir lib --copy-files",
     "jest": "jest --config jestConfig.js",
     "lint": "eslint --ext .js,.jsx .",
