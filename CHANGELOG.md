@@ -3,6 +3,8 @@ Changelog
 
 Unreleased
 ----------
+### Added
+* Added a docker development environment.
 
 3.2.0 - (October 30, 2019)
 ----------
