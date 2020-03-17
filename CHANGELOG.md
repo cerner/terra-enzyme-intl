@@ -3,6 +3,9 @@ Changelog
 
 Unreleased
 ----------
+
+3.3.0 - (March 17, 2020)
+----------
 ### Added
 * Added a docker development environment.
 
