@@ -145,7 +145,6 @@ describe('mockIntl', () => {
   });
 });
 
-
 describe('shallowContext with shallow', () => {
   describe('using FormattedMessage', () => {
     const subject = <FormattedMessageSubject foo="bar" />;
