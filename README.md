@@ -1,6 +1,6 @@
 <!-- Logo -->
 <p align="center">
-  <img height="128" width="128" src="https://github.com/cerner/terra-enzyme-intl/raw/master/terra.png">
+  <img height="128" width="128" src="https://github.com/cerner/terra-enzyme-intl/raw/main/terra.png">
 </p>
 
 <!-- Name -->
@@ -9,7 +9,7 @@
 </h1>
 
 [![NPM version](https://badgen.net/npm/v/terra-enzyme-intl)](https://www.npmjs.org/package/terra-enzyme-intl)
-[![License](https://badgen.net/github/license/cerner/terra-enzyme-intl)](https://github.com/cerner/terra-enzyme-intl/blob/master/LICENSE)
+[![License](https://badgen.net/github/license/cerner/terra-enzyme-intl)](https://github.com/cerner/terra-enzyme-intl/blob/main/LICENSE)
 [![Build Status](https://badgen.net/travis/cerner/terra-enzyme-intl)](https://travis-ci.com/cerner/terra-enzyme-intl)
 [![Dependencies status](https://badgen.net/david/dep/cerner/terra-enzyme-intl)](https://david-dm.org/cerner/terra-enzyme-intl)
 [![devDependencies status](https://badgen.net/david/dev/cerner/terra-enzyme-intl)](https://david-dm.org/cerner/terra-enzyme-intl?type=dev)
