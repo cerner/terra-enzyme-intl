@@ -2,8 +2,13 @@
 
 ## Unreleased
 
+* Breaking Change
+  * Removed `mountContext` and `shallowContext`
+  * Updated `mockIntl` to match latest intl shape
+
 * Changed
   * Updated browserslist-config-terra dependency to @cerner/browerslist-config-terra v3
+  * Updated to utilize WrappingComponent instead of injecting context
 
 ## 3.4.0 - (June 9, 2020)
 
