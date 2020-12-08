@@ -53,12 +53,12 @@
     "jest": "^24.0.0",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
-    "react-intl": "^2.8.0"
+    "react-intl": "^5.10.6"
   },
   "peerDependencies": {
     "enzyme": "3.x",
     "react": "16.x",
-    "react-intl": ">= 2.7"
+    "react-intl": ">= 5.10.6"
   },
   "scripts": {
     "clean": "rm -rf node_modules",

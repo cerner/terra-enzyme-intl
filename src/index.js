@@ -4,78 +4,62 @@
  * These helper functions aim to address that and wrap a valid,
  * English-locale intl context around them.
  */
-import { cloneElement } from 'react';
-import { IntlProvider, intlShape } from 'react-intl';
+import { createElement } from 'react';
+import { IntlProvider } from 'react-intl';
 import { mount, shallow, render } from 'enzyme';
 
 export const mockIntl = {
   defaultLocale: 'en',
   formatDate: () => 'mock date',
-  formatHTMLMessage: ({ id }) => id,
   formatMessage: ({ id }) => id,
   formatNumber: value => `${value}`,
   formatPlural: value => `${value}`,
   formatTime: value => `${value}`,
-  formatRelative: value => `${value}`,
-  now: () => 0,
+  formatRelativeTime: value => `${value}`,
 };
 
-const messageProxy = new Proxy({}, { get: (_, property) => property }); // eslint-disable-line compat/compat
+const messageProxy = new Proxy({}, {
+  get: (_, property) => property,
+  getOwnPropertyDescriptor: () => ({ configurable: true, enumerable: true }),
+}); // eslint-disable-line compat/compat
+const locale = 'en';
+const defaultLocale = 'en';
 
-// Create the IntlProvider to retrieve context for wrapping around.
-const intlProvider = new IntlProvider({ locale: 'en', messages: messageProxy }, {});
-const { intl } = intlProvider.getChildContext();
-
-const injectIntl = node => cloneElement(node, { intl });
-
-export const shallowContext = { context: { intl } };
-export const mountContext = { context: { intl }, childContextTypes: { intl: intlShape } };
-
-export const mountWithIntl = (node, { context, childContextTypes, ...options } = {}) => {
-  const subject = injectIntl(node);
+export const mountWithIntl = (node, options = {}) => {
   const opts = {
-    context: {
-      ...context,
-      ...mountContext.context,
-    },
-    childContextTypes: {
-      ...childContextTypes,
-      ...mountContext.childContextTypes,
+    wrappingComponent: IntlProvider,
+    wrappingComponentProps: {
+      locale,
+      defaultLocale,
+      messages: messageProxy,
     },
     ...options,
   };
 
-  return mount(subject, opts);
+  return mount(node, opts);
+};
+export const renderWithIntl = (node, options = {}) => {
+  const subject = createElement(IntlProvider, {
+    locale,
+    defaultLocale,
+    messages: messageProxy,
+  }, node);
+
+  return render(subject, options);
 };
 
-export const renderWithIntl = (node, { context, childContextTypes, ...options } = {}) => {
-  const subject = injectIntl(node);
+export const shallowWithIntl = (node, options = {}) => {
   const opts = {
-    context: {
-      ...context,
-      ...mountContext.context,
-    },
-    childContextTypes: {
-      ...childContextTypes,
-      ...mountContext.childContextTypes,
+    wrappingComponent: IntlProvider,
+    wrappingComponentProps: {
+      locale,
+      defaultLocale,
+      messages: messageProxy,
     },
     ...options,
   };
 
-  return render(subject, opts);
-};
-
-export const shallowWithIntl = (node, { context, ...options } = {}) => {
-  const subject = injectIntl(node);
-  const opts = {
-    context: {
-      ...context,
-      ...shallowContext.context,
-    },
-    ...options,
-  };
-
-  return shallow(subject, opts);
+  return shallow(node, opts);
 };
 
 export default {
@@ -83,6 +67,4 @@ export default {
   mountWithIntl,
   shallowWithIntl,
   renderWithIntl,
-  shallowContext,
-  mountContext,
 };
